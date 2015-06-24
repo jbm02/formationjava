@@ -12,7 +12,7 @@ public class Triangle {
 		System.out.println("Choisir une taille :");
 		// Scanner
 		Scanner reader = new Scanner(System.in);
-		n = reader.nextInt();
+		n = Integer.parseInt(reader.nextLine());
 
 		for (int i = 0; i < n; i++) {
 
