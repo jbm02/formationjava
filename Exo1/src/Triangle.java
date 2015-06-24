@@ -22,6 +22,7 @@ public class Triangle {
 				if (j == 0 || i == 0 || j == n - i - 1) {
 					System.out.print("x");
 				} else {
+					//Passage à la ligne suivante
 					System.out.print("o");
 				}
 			}
