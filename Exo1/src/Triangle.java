@@ -31,5 +31,6 @@ public class Triangle {
 		}
 		// Fermeture Scanner
 		reader.close();
+
 	}
 }
