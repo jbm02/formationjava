@@ -1,4 +1,4 @@
-// Classe Triangle
+// Exo1 Classe Triangle
 
 import java.util.Scanner;
 
