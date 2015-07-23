@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name></short-name>
+  <tag>
+  	<name>myForm</name>
+    <tag-class>com.AnnotationWeb.util.Myform</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      	<name>item</name>
+      	<required>true</required>
+  	</attribute>
+    <attribute>
+      	<name>action</name>
+      	<required>true</required>
+  	</attribute>
+  </tag>
+</taglib>
