@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="postTitre">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Le titre ne peut pas être vide</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">4</param>
+			<param name="maxLength">50</param>
+			<message>Le titre doit faire entre 4 et 60 caractères !</message>
+		</field-validator>
+	</field>
+	
+	<field name="postCorps">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Le corps ne peut pas être vide</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">4</param>
+			<param name="maxLength">900</param>
+			<message>Le corps doit faire entre 4 et 900 caractères !</message>
+		</field-validator>
+	</field>
+</validators>
