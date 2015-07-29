@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+	<constant name="struts.action.extension" value=","/>
+ 
+    <package name="default" namespace="/" extends="struts-default">
+
+        <default-action-ref name="index"/>
+
+        <action name="index" class="com.limpoto.webapps.StrutsForms.IndexAction" method="index" >
+            <result name="success">/index.jsp</result>
+        </action>
+        
+        <action name="afficheForm" class="com.limpoto.webapps.StrutsForms.action.FormAction" method="index">
+        	<result name="success">/formarticle.jsp</result>
+        </action>
+        
+        <action name="enregistrer" class="com.limpoto.webapps.StrutsForms.action.FormAction" method="enregistrer">
+        	<result name="success">/thankyou.jsp</result>
+        	<result name="input">/formarticle.jsp</result>
+        </action>
+        
+        <action name="liste" class="com.limpoto.webapps.StrutsForms.action.FormAction" method="liste">
+        	<result name="success">/listearticle.jsp</result>
+        </action>
+        
+         <action name="edit" class="com.limpoto.webapps.StrutsForms.action.ArticleAction" method="edit">
+        	<result name="success">/editarticle.jsp</result>
+        </action>
+
+    </package>
+    <!-- Add addition packages and configuration here. -->
+</struts>
